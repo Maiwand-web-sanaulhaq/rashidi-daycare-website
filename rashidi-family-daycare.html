@@ -1,0 +1,1138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rashidi Family Daycare | Warm, Safe Childcare in Bowie, MD</title>
+<meta name="description" content="Rashidi Family Daycare in Bowie, MD offers a warm, safe, culturally respectful environment for children. Call (301) 526-0841 to schedule a tour today.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --cream: #FAF7F2;
+    --warm-white: #FFFDF9;
+    --sand: #F0E9DC;
+    --taupe: #C8B89A;
+    --brown: #8B6F47;
+    --navy: #1C3557;
+    --teal: #2A7A6F;
+    --teal-light: #3D9E92;
+    --teal-pale: #EAF5F3;
+    --gold: #C9973A;
+    --text-dark: #1A1A1A;
+    --text-mid: #4A4A4A;
+    --text-light: #777;
+    --font-display: 'Playfair Display', Georgia, serif;
+    --font-body: 'DM Sans', system-ui, sans-serif;
+    --radius: 14px;
+    --radius-sm: 8px;
+    --shadow: 0 4px 24px rgba(28,53,87,0.09);
+    --shadow-lg: 0 12px 48px rgba(28,53,87,0.14);
+  }
+
+  html { scroll-behavior: smooth; }
+  body { font-family: var(--font-body); background: var(--warm-white); color: var(--text-dark); font-size: 16px; line-height: 1.7; }
+
+  /* ---- NAV ---- */
+  nav {
+    position: sticky; top: 0; z-index: 100;
+    background: rgba(255,253,249,0.96);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(200,184,154,0.25);
+    padding: 0 5%;
+    display: flex; align-items: center; justify-content: space-between; height: 68px;
+  }
+  .nav-logo { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+  .nav-logo-mark {
+    width: 38px; height: 38px; border-radius: 50%;
+    background: var(--teal); display: flex; align-items: center; justify-content: center;
+    font-family: var(--font-display); font-size: 16px; color: #fff; font-weight: 700;
+    flex-shrink: 0;
+  }
+  .nav-logo-text { font-family: var(--font-display); font-size: 17px; color: var(--navy); font-weight: 600; line-height: 1.2; }
+  .nav-logo-sub { font-size: 11px; color: var(--text-light); font-weight: 400; letter-spacing: 0.04em; }
+  .nav-links { display: flex; gap: 28px; list-style: none; }
+  .nav-links a { text-decoration: none; color: var(--text-mid); font-size: 14px; font-weight: 500; transition: color .2s; }
+  .nav-links a:hover, .nav-links a.active { color: var(--teal); }
+  .nav-cta {
+    background: var(--teal); color: #fff; text-decoration: none;
+    padding: 9px 20px; border-radius: 50px; font-size: 14px; font-weight: 600;
+    transition: background .2s, transform .15s;
+    display: none;
+  }
+  .nav-cta:hover { background: var(--navy); transform: translateY(-1px); }
+  .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; background: none; border: none; padding: 4px; }
+  .hamburger span { display: block; width: 22px; height: 2px; background: var(--navy); border-radius: 2px; transition: .3s; }
+  .mobile-menu {
+    display: none; flex-direction: column; gap: 0;
+    background: var(--warm-white); border-top: 1px solid var(--sand);
+    padding: 1rem 5%; position: absolute; top: 68px; left: 0; right: 0;
+    box-shadow: var(--shadow);
+  }
+  .mobile-menu.open { display: flex; }
+  .mobile-menu a { text-decoration: none; color: var(--text-dark); font-weight: 500; padding: 14px 0; border-bottom: 1px solid var(--sand); font-size: 16px; }
+  .mobile-menu a:last-child { border: none; color: var(--teal); }
+
+  /* ---- PAGE SECTIONS ---- */
+  .page { display: none; }
+  .page.active { display: block; }
+
+  /* ---- HERO ---- */
+  .hero {
+    min-height: 90vh; display: flex; align-items: center;
+    background: var(--cream);
+    position: relative; overflow: hidden;
+    padding: 80px 5% 60px;
+  }
+  .hero-bg-circle {
+    position: absolute; border-radius: 50%; opacity: 0.12;
+    background: var(--teal);
+  }
+  .hero-bg-circle.c1 { width: 500px; height: 500px; right: -120px; top: -100px; }
+  .hero-bg-circle.c2 { width: 280px; height: 280px; right: 180px; bottom: -60px; background: var(--gold); opacity: 0.10; }
+  .hero-bg-circle.c3 { width: 180px; height: 180px; left: -40px; bottom: 80px; background: var(--navy); opacity: 0.07; }
+  .hero-inner { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; width: 100%; position: relative; z-index: 2; }
+  .hero-badge {
+    display: inline-flex; align-items: center; gap: 6px;
+    background: var(--teal-pale); color: var(--teal); border: 1px solid rgba(42,122,111,0.2);
+    padding: 5px 14px; border-radius: 50px; font-size: 13px; font-weight: 500; margin-bottom: 20px;
+  }
+  .hero-badge::before { content: '★'; font-size: 13px; }
+  h1.hero-h1 {
+    font-family: var(--font-display); font-size: clamp(2rem, 4vw, 3.2rem);
+    color: var(--navy); line-height: 1.2; font-weight: 700; margin-bottom: 18px;
+  }
+  h1.hero-h1 em { color: var(--teal); font-style: normal; }
+  .hero-sub { font-size: 17px; color: var(--text-mid); line-height: 1.8; margin-bottom: 32px; max-width: 480px; }
+  .btn-group { display: flex; flex-wrap: wrap; gap: 12px; }
+  .btn-primary {
+    background: var(--teal); color: #fff; text-decoration: none;
+    padding: 14px 28px; border-radius: 50px; font-size: 15px; font-weight: 600;
+    transition: background .2s, transform .15s; display: inline-flex; align-items: center; gap: 8px;
+    border: none; cursor: pointer;
+  }
+  .btn-primary:hover { background: var(--navy); transform: translateY(-2px); }
+  .btn-secondary {
+    background: transparent; color: var(--navy); text-decoration: none;
+    padding: 13px 28px; border-radius: 50px; font-size: 15px; font-weight: 600;
+    border: 2px solid var(--navy); transition: .2s; display: inline-flex; align-items: center; gap: 8px;
+    cursor: pointer;
+  }
+  .btn-secondary:hover { background: var(--navy); color: #fff; }
+  .hero-visual {
+    background: var(--warm-white); border-radius: 24px; padding: 32px;
+    box-shadow: var(--shadow-lg); border: 1px solid rgba(200,184,154,0.3);
+  }
+  .hero-stat-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .hero-stat {
+    background: var(--cream); border-radius: var(--radius); padding: 20px;
+    text-align: center; border: 1px solid rgba(200,184,154,0.25);
+  }
+  .hero-stat-num { font-family: var(--font-display); font-size: 2rem; color: var(--teal); font-weight: 700; }
+  .hero-stat-label { font-size: 12px; color: var(--text-light); margin-top: 2px; }
+  .hero-quote {
+    margin-top: 20px; padding: 18px 20px; background: var(--teal-pale);
+    border-left: 3px solid var(--teal); border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+    font-size: 14px; color: var(--text-mid); line-height: 1.6; font-style: italic;
+  }
+  .hero-quote cite { font-style: normal; font-weight: 600; color: var(--navy); font-size: 13px; display: block; margin-top: 8px; }
+
+  /* ---- TRUST STRIP ---- */
+  .trust-strip {
+    background: var(--navy); color: #fff;
+    padding: 18px 5%;
+  }
+  .trust-strip-inner { max-width: 1100px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; align-items: center; }
+  .trust-item { display: flex; align-items: center; gap: 8px; font-size: 14px; padding: 6px 16px; }
+  .trust-item .icon { font-size: 18px; }
+  .trust-sep { color: rgba(255,255,255,0.25); font-size: 20px; display: none; }
+
+  /* ---- SECTIONS ---- */
+  section { padding: 80px 5%; }
+  .section-inner { max-width: 1100px; margin: 0 auto; }
+  .section-label { font-size: 12px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--teal); margin-bottom: 10px; }
+  h2.section-h2 { font-family: var(--font-display); font-size: clamp(1.6rem, 3vw, 2.4rem); color: var(--navy); font-weight: 700; line-height: 1.25; margin-bottom: 16px; }
+  .section-lead { font-size: 17px; color: var(--text-mid); max-width: 560px; }
+  .section-header { margin-bottom: 48px; }
+  .section-header.centered { text-align: center; }
+  .section-header.centered .section-lead { margin: 0 auto; }
+
+  /* ---- WHY CARDS ---- */
+  .why-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+  .why-card {
+    background: var(--warm-white); border: 1px solid rgba(200,184,154,0.3);
+    border-radius: var(--radius); padding: 28px; transition: box-shadow .25s, transform .25s;
+  }
+  .why-card:hover { box-shadow: var(--shadow); transform: translateY(-4px); }
+  .why-icon { width: 48px; height: 48px; border-radius: 12px; background: var(--teal-pale); display: flex; align-items: center; justify-content: center; font-size: 22px; margin-bottom: 16px; }
+  .why-card h3 { font-family: var(--font-display); font-size: 1.1rem; color: var(--navy); margin-bottom: 8px; font-weight: 600; }
+  .why-card p { font-size: 14px; color: var(--text-mid); line-height: 1.7; }
+
+  /* ---- PROGRAMS ---- */
+  .programs-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
+  .program-card {
+    background: var(--cream); border-radius: var(--radius); padding: 28px 32px;
+    border-left: 4px solid var(--teal); position: relative; overflow: hidden;
+  }
+  .program-card::after { content: attr(data-age); position: absolute; right: 20px; top: 20px; font-size: 11px; font-weight: 600; color: var(--teal); background: var(--teal-pale); padding: 3px 10px; border-radius: 50px; }
+  .program-card h3 { font-family: var(--font-display); font-size: 1.15rem; color: var(--navy); margin-bottom: 8px; }
+  .program-card p { font-size: 14px; color: var(--text-mid); line-height: 1.7; }
+
+  /* ---- SAFETY ---- */
+  .safety-section { background: var(--cream); }
+  .safety-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+  .safety-list { display: flex; flex-direction: column; gap: 16px; margin-top: 28px; }
+  .safety-item { display: flex; gap: 14px; align-items: flex-start; }
+  .safety-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--teal); margin-top: 8px; flex-shrink: 0; }
+  .safety-item-text h4 { font-weight: 600; color: var(--navy); margin-bottom: 2px; }
+  .safety-item-text p { font-size: 14px; color: var(--text-mid); }
+  .safety-visual { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .safety-card { background: var(--warm-white); border-radius: var(--radius); padding: 24px; text-align: center; box-shadow: var(--shadow); }
+  .safety-card-icon { font-size: 30px; margin-bottom: 10px; }
+  .safety-card-label { font-size: 13px; font-weight: 600; color: var(--navy); }
+
+  /* ---- REVIEWS ---- */
+  .reviews-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+  .review-card {
+    background: var(--warm-white); border-radius: var(--radius); padding: 28px;
+    border: 1px solid rgba(200,184,154,0.3); box-shadow: var(--shadow);
+  }
+  .review-stars { color: var(--gold); font-size: 16px; margin-bottom: 14px; letter-spacing: 2px; }
+  .review-text { font-size: 15px; color: var(--text-mid); line-height: 1.75; font-style: italic; margin-bottom: 16px; }
+  .review-author { display: flex; align-items: center; gap: 10px; }
+  .review-avatar { width: 36px; height: 36px; border-radius: 50%; background: var(--teal); display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: 700; color: #fff; }
+  .review-name { font-weight: 600; font-size: 14px; color: var(--navy); }
+  .review-date { font-size: 12px; color: var(--text-light); }
+  .review-disclaimer { margin-top: 32px; text-align: center; font-size: 12px; color: var(--text-light); }
+
+  /* ---- LOCATION STRIP ---- */
+  .location-strip { background: var(--navy); color: #fff; padding: 48px 5%; }
+  .location-inner { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 32px; align-items: center; }
+  .location-item h4 { font-size: 11px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.5); margin-bottom: 6px; }
+  .location-item p { font-size: 15px; color: #fff; line-height: 1.6; }
+  .location-item a { color: var(--teal-light); text-decoration: none; font-weight: 600; }
+  .location-item a:hover { text-decoration: underline; }
+
+  /* ---- FINAL CTA ---- */
+  .final-cta { background: linear-gradient(135deg, var(--teal) 0%, var(--navy) 100%); color: #fff; text-align: center; padding: 80px 5%; }
+  .final-cta h2 { font-family: var(--font-display); font-size: clamp(1.8rem, 3vw, 2.6rem); margin-bottom: 16px; }
+  .final-cta p { font-size: 17px; opacity: 0.85; max-width: 500px; margin: 0 auto 32px; }
+  .final-cta .btn-group { justify-content: center; }
+  .btn-white { background: #fff; color: var(--navy); text-decoration: none; padding: 14px 28px; border-radius: 50px; font-size: 15px; font-weight: 700; transition: .2s; display: inline-flex; align-items: center; gap: 8px; }
+  .btn-white:hover { background: var(--cream); transform: translateY(-2px); }
+  .btn-outline-white { background: transparent; color: #fff; border: 2px solid rgba(255,255,255,0.5); text-decoration: none; padding: 13px 28px; border-radius: 50px; font-size: 15px; font-weight: 600; transition: .2s; display: inline-flex; align-items: center; gap: 8px; cursor: pointer; }
+  .btn-outline-white:hover { border-color: #fff; background: rgba(255,255,255,0.1); }
+
+  /* ---- ABOUT PAGE ---- */
+  .about-hero { background: var(--cream); padding: 80px 5% 60px; }
+  .about-hero-inner { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+  .values-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; margin-top: 40px; }
+  .value-card { background: var(--warm-white); border-radius: var(--radius); padding: 22px; border: 1px solid rgba(200,184,154,0.3); }
+  .value-card h4 { font-weight: 600; color: var(--navy); margin-bottom: 6px; font-size: 15px; }
+  .value-card p { font-size: 14px; color: var(--text-mid); }
+
+  /* ---- CONTACT PAGE ---- */
+  .contact-grid { display: grid; grid-template-columns: 1fr 1.4fr; gap: 60px; align-items: start; }
+  .contact-info-item { display: flex; gap: 14px; margin-bottom: 24px; }
+  .contact-info-icon { width: 42px; height: 42px; border-radius: var(--radius-sm); background: var(--teal-pale); display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0; }
+  .contact-info-text h4 { font-weight: 600; color: var(--navy); margin-bottom: 2px; font-size: 15px; }
+  .contact-info-text p, .contact-info-text a { font-size: 15px; color: var(--text-mid); text-decoration: none; }
+  .contact-info-text a:hover { color: var(--teal); }
+  .tour-form { background: var(--warm-white); border: 1px solid rgba(200,184,154,0.35); border-radius: 20px; padding: 36px; box-shadow: var(--shadow); }
+  .tour-form h3 { font-family: var(--font-display); font-size: 1.4rem; color: var(--navy); margin-bottom: 6px; }
+  .tour-form p.form-sub { font-size: 14px; color: var(--text-light); margin-bottom: 24px; }
+  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .form-group { margin-bottom: 16px; }
+  .form-group label { display: block; font-size: 13px; font-weight: 600; color: var(--text-mid); margin-bottom: 6px; }
+  .form-group input, .form-group select, .form-group textarea {
+    width: 100%; padding: 11px 14px; border: 1.5px solid rgba(200,184,154,0.5); border-radius: var(--radius-sm);
+    font-family: var(--font-body); font-size: 15px; color: var(--text-dark); background: var(--cream);
+    transition: border-color .2s;
+    outline: none;
+  }
+  .form-group input:focus, .form-group select:focus, .form-group textarea:focus { border-color: var(--teal); background: #fff; }
+  .form-group textarea { min-height: 90px; resize: vertical; }
+  .privacy-note { font-size: 12px; color: var(--text-light); margin-top: 12px; display: flex; align-items: flex-start; gap: 6px; }
+  .privacy-note::before { content: '🔒'; font-size: 12px; margin-top: 1px; }
+
+
+  /* ---- GALLERY REAL PHOTOS ---- */
+  .gallery-photo-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-top: 48px;
+  }
+  .gallery-photo-item {
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    cursor: pointer;
+    transition: transform .25s, box-shadow .25s;
+    position: relative;
+    background: var(--sand);
+  }
+  .gallery-photo-item:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
+  .gallery-photo-item img {
+    width: 100%; height: 100%; object-fit: cover; display: block;
+  }
+  .gallery-photo-item:nth-child(1) { grid-column: span 2; aspect-ratio: 16/9; }
+  .gallery-photo-item:nth-child(2) { aspect-ratio: 4/3; }
+  .gallery-photo-item:nth-child(3) { aspect-ratio: 4/3; }
+  .gallery-photo-item:nth-child(4) { grid-column: span 2; aspect-ratio: 16/9; }
+  .gallery-photo-item:nth-child(5) { aspect-ratio: 4/3; }
+  .gallery-caption {
+    position: absolute; bottom: 0; left: 0; right: 0;
+    background: linear-gradient(transparent, rgba(28,53,87,0.85));
+    padding: 32px 16px 14px;
+    color: #fff;
+  }
+  .gallery-caption h4 { font-size: 14px; font-weight: 600; margin-bottom: 2px; }
+  .gallery-caption p { font-size: 12px; opacity: 0.85; }
+
+  /* Lightbox */
+  .lightbox { display:none; position:fixed; inset:0; background:rgba(0,0,0,0.92); z-index:999; align-items:center; justify-content:center; }
+  .lightbox.open { display:flex; }
+  .lightbox img { max-width:90vw; max-height:90vh; border-radius:12px; object-fit:contain; }
+  .lightbox-close { position:absolute; top:20px; right:28px; color:#fff; font-size:36px; cursor:pointer; line-height:1; }
+
+  /* ---- GALLERY ---- */
+  .gallery-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+  .gallery-item {
+    background: var(--sand); border-radius: var(--radius); aspect-ratio: 4/3;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    gap: 10px; border: 2px dashed rgba(200,184,154,0.5);
+    transition: background .2s;
+  }
+  .gallery-item:nth-child(1) { aspect-ratio: 8/5; grid-column: span 2; }
+  .gallery-item:nth-child(4) { aspect-ratio: 8/5; grid-column: span 2; }
+  .gallery-item-icon { font-size: 32px; }
+  .gallery-item-label { font-size: 13px; font-weight: 600; color: var(--brown); }
+  .gallery-item-desc { font-size: 12px; color: var(--text-light); text-align: center; max-width: 160px; }
+  .gallery-note { text-align: center; margin-top: 32px; padding: 20px; background: var(--teal-pale); border-radius: var(--radius); font-size: 14px; color: var(--teal); }
+
+  /* ---- FAQ ---- */
+  .faq-list { max-width: 720px; margin: 0 auto; }
+  .faq-item { border-bottom: 1px solid rgba(200,184,154,0.35); }
+  .faq-q {
+    width: 100%; background: none; border: none; text-align: left; padding: 20px 0;
+    font-family: var(--font-body); font-size: 16px; font-weight: 600; color: var(--navy);
+    cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 12px;
+  }
+  .faq-q::after { content: '+'; font-size: 20px; color: var(--teal); flex-shrink: 0; transition: transform .3s; }
+  .faq-q.open::after { transform: rotate(45deg); }
+  .faq-a { max-height: 0; overflow: hidden; transition: max-height .35s ease; }
+  .faq-a-inner { padding: 0 0 20px; font-size: 15px; color: var(--text-mid); line-height: 1.75; }
+
+  /* ---- FOOTER ---- */
+  footer { background: #0F1E33; color: rgba(255,255,255,0.7); padding: 48px 5% 32px; }
+  .footer-inner { max-width: 1100px; margin: 0 auto; }
+  .footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 40px; margin-bottom: 36px; }
+  .footer-brand { max-width: 280px; }
+  .footer-logo { font-family: var(--font-display); font-size: 18px; color: #fff; margin-bottom: 10px; }
+  .footer-desc { font-size: 13px; line-height: 1.7; }
+  footer h5 { font-size: 11px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.5); margin-bottom: 12px; }
+  footer ul { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+  footer ul li a { text-decoration: none; font-size: 14px; color: rgba(255,255,255,0.7); transition: color .2s; }
+  footer ul li a:hover { color: var(--teal-light); }
+  .footer-nap { font-size: 13px; line-height: 1.8; }
+  .footer-nap strong { display: block; color: #fff; font-size: 14px; margin-bottom: 4px; }
+  .footer-bottom { border-top: 1px solid rgba(255,255,255,0.08); padding-top: 24px; display: flex; justify-content: space-between; align-items: center; flex-wrap: gap; gap: 12px; font-size: 12px; }
+
+  /* ---- RESPONSIVE ---- */
+  @media(min-width: 768px) { .nav-cta { display: inline-flex; align-items: center; gap: 6px; } .trust-sep { display: block; } }
+  @media(max-width: 900px) {
+    .nav-links { display: none; }
+    .hamburger { display: flex; }
+    .hero-inner, .about-hero-inner, .safety-inner, .contact-grid { grid-template-columns: 1fr; }
+    .hero-visual { display: none; }
+    .why-grid, .programs-grid, .reviews-grid { grid-template-columns: 1fr; }
+    .location-inner { grid-template-columns: 1fr; gap: 20px; }
+    .form-row { grid-template-columns: 1fr; }
+    .footer-grid { grid-template-columns: 1fr; }
+    .gallery-grid { grid-template-columns: 1fr 1fr; }
+    .gallery-item:nth-child(1), .gallery-item:nth-child(4) { grid-column: span 2; }
+    .values-grid { grid-template-columns: 1fr; }
+    .safety-visual { display: none; }
+  }
+  @media(max-width: 480px) {
+    .gallery-grid { grid-template-columns: 1fr; }
+    .gallery-item:nth-child(1), .gallery-item:nth-child(4) { grid-column: span 1; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <a class="nav-logo" href="#" onclick="showPage('home')">
+    <div class="nav-logo-mark">RF</div>
+    <div>
+      <div class="nav-logo-text">Rashidi Family Daycare</div>
+      <div class="nav-logo-sub">Bowie, MD</div>
+    </div>
+  </a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#" onclick="showPage('home')" class="active" id="nav-home">Home</a></li>
+    <li><a href="#" onclick="showPage('about')" id="nav-about">About</a></li>
+    <li><a href="#" onclick="showPage('programs')" id="nav-programs">Programs</a></li>
+    <li><a href="#" onclick="showPage('reviews')" id="nav-reviews">Reviews</a></li>
+    <li><a href="#" onclick="showPage('gallery')" id="nav-gallery">Gallery</a></li>
+    <li><a href="#" onclick="showPage('contact')" id="nav-contact">Contact</a></li>
+  </ul>
+  <a href="tel:+13015260841" class="nav-cta">📞 Call Now</a>
+  <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#" onclick="showPage('home');closeMenu()">Home</a>
+  <a href="#" onclick="showPage('about');closeMenu()">About</a>
+  <a href="#" onclick="showPage('programs');closeMenu()">Programs</a>
+  <a href="#" onclick="showPage('reviews');closeMenu()">Reviews</a>
+  <a href="#" onclick="showPage('gallery');closeMenu()">Gallery</a>
+  <a href="#" onclick="showPage('contact');closeMenu()">Contact / Schedule Tour</a>
+  <a href="tel:+13015260841">📞 (301) 526-0841</a>
+</div>
+
+<!-- ===== HOME PAGE ===== -->
+<div class="page active" id="page-home">
+
+  <section class="hero">
+    <div class="hero-bg-circle c1"></div>
+    <div class="hero-bg-circle c2"></div>
+    <div class="hero-bg-circle c3"></div>
+    <div class="hero-inner">
+      <div class="hero-content">
+        <div class="hero-badge">5.0 ★ — Trusted by Bowie Families</div>
+        <h1 class="hero-h1">Where Children Are <em>Nurtured</em> Like Family</h1>
+        <p class="hero-sub">Rashidi Family Daycare offers a warm, safe, and culturally respectful environment where children are nurtured, educated, and cared for like family — right here in Bowie, MD.</p>
+        <div class="btn-group">
+          <a href="#" class="btn-primary" onclick="showPage('contact')">📅 Schedule a Tour</a>
+          <a href="tel:+13015260841" class="btn-secondary">📞 (301) 526-0841</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-stat-grid">
+          <div class="hero-stat">
+            <div class="hero-stat-num">5.0</div>
+            <div class="hero-stat-label">★ Rating (11 reviews)</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-num">6 PM</div>
+            <div class="hero-stat-label">Open daily, closes at 6</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-num">🏡</div>
+            <div class="hero-stat-label">Home-like environment</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-num">❤️</div>
+            <div class="hero-stat-label">Family-centered care</div>
+          </div>
+        </div>
+        <div class="hero-quote">
+          "They truly care about each child's well-being and development. My child gets the attention she needs—unlike a big daycare."
+          <cite>— Bowie, MD Parent</cite>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="trust-strip">
+    <div class="trust-strip-inner">
+      <div class="trust-item"><span class="icon">⭐</span> 5.0 Google Rating</div>
+      <div class="trust-sep">·</div>
+      <div class="trust-item"><span class="icon">🏡</span> Home-Like Environment</div>
+      <div class="trust-sep">·</div>
+      <div class="trust-item"><span class="icon">🍽️</span> Nutritious Meals Provided</div>
+      <div class="trust-sep">·</div>
+      <div class="trust-item"><span class="icon">🎨</span> Learning Through Play</div>
+      <div class="trust-sep">·</div>
+      <div class="trust-item"><span class="icon">🌍</span> Culturally Respectful</div>
+      <div class="trust-sep">·</div>
+      <div class="trust-item"><span class="icon">🕕</span> Open Until 6:00 PM</div>
+    </div>
+  </div>
+
+  <section>
+    <div class="section-inner">
+      <div class="section-header centered">
+        <div class="section-label">Why families choose us</div>
+        <h2 class="section-h2">A Daycare That Feels Like Home</h2>
+        <p class="section-lead">We believe every child deserves personal attention, a loving environment, and the space to grow — physically, socially, and intellectually.</p>
+      </div>
+      <div class="why-grid">
+        <div class="why-card">
+          <div class="why-icon">🛡️</div>
+          <h3>Safe & Supervised</h3>
+          <p>Your child's safety is our highest priority. Our home environment is structured, clean, and continuously monitored so parents can have complete peace of mind.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">🤝</div>
+          <h3>Personal Attention</h3>
+          <p>Unlike large daycare centers, we maintain a low child-to-caregiver ratio so every child receives the focused, loving attention they deserve each day.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">🌍</div>
+          <h3>Culturally Respectful</h3>
+          <p>We honor and celebrate each family's cultural background, creating an inclusive, welcoming space where every child feels seen and respected.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">📚</div>
+          <h3>Learning & Play</h3>
+          <p>Our age-appropriate activities balance structured learning with imaginative play, helping children build skills, confidence, and curiosity.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">🍎</div>
+          <h3>Nutritious Meals</h3>
+          <p>We provide wholesome, balanced meals and snacks throughout the day to keep children energized, healthy, and ready to learn and play.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">❤️</div>
+          <h3>Cared For Like Family</h3>
+          <p>Our approach is simple: we treat every child as we would our own — with patience, warmth, and genuine care for their well-being and growth.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="background: var(--cream);">
+    <div class="section-inner">
+      <div class="section-header">
+        <div class="section-label">Our programs</div>
+        <h2 class="section-h2">Age-Appropriate Programs Built Around Your Child</h2>
+        <p class="section-lead">We provide age-appropriate programs designed to meet each child's developmental needs through nurturing care, meaningful learning, and joyful play.</p>
+      </div>
+      <div class="programs-grid">
+        <div class="program-card" data-age="Infants">
+          <h3>🍼 Infant Care</h3>
+          <p>Attentive, gentle care for our youngest learners. We follow each baby's routine, support developmental milestones, and provide a safe, calm space for growth and bonding.</p>
+        </div>
+        <div class="program-card" data-age="Toddlers">
+          <h3>🧩 Toddler Program</h3>
+          <p>Hands-on exploration, language development, and social skill-building through guided activities and play. We encourage curiosity and independence at every step.</p>
+        </div>
+        <div class="program-card" data-age="Preschool">
+          <h3>🎨 Preschool Readiness</h3>
+          <p>We prepare children for their school journey through early literacy, counting, creative arts, and group activities that build confidence and a love of learning.</p>
+        </div>
+        <div class="program-card" data-age="School-Age">
+          <h3>📖 School-Age Care</h3>
+          <p>Before and after school support in a warm, structured environment. Children receive a safe place to unwind, complete homework, and enjoy enriching activities.</p>
+        </div>
+      </div>
+      <div style="text-align:center; margin-top:36px;">
+        <a href="#" class="btn-primary" onclick="showPage('programs')">View All Programs →</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="safety-section">
+    <div class="section-inner">
+      <div class="safety-inner">
+        <div>
+          <div class="section-label">Clean & safe</div>
+          <h2 class="section-h2">An Environment You Can Trust</h2>
+          <p style="color:var(--text-mid); font-size:16px; margin-bottom:8px;">Your child's safety and well-being are at the center of everything we do. Our home is thoughtfully arranged to be safe, stimulating, and welcoming.</p>
+          <div class="safety-list">
+            <div class="safety-item">
+              <div class="safety-dot"></div>
+              <div class="safety-item-text">
+                <h4>Clean, Tidy Spaces</h4>
+                <p>We maintain clean play areas, restrooms, and dining spaces throughout the day — every day.</p>
+              </div>
+            </div>
+            <div class="safety-item">
+              <div class="safety-dot"></div>
+              <div class="safety-item-text">
+                <h4>Safe & Child-Proofed Home</h4>
+                <p>Our environment is designed with children's safety in mind, with age-appropriate furniture and secured spaces.</p>
+              </div>
+            </div>
+            <div class="safety-item">
+              <div class="safety-dot"></div>
+              <div class="safety-item-text">
+                <h4>Supervised at All Times</h4>
+                <p>Children are never left unsupervised. Our caregivers are present, attentive, and engaged throughout the day.</p>
+              </div>
+            </div>
+            <div class="safety-item">
+              <div class="safety-dot"></div>
+              <div class="safety-item-text">
+                <h4>Healthy Routines</h4>
+                <p>Regular handwashing, consistent nap schedules, and balanced meals support each child's overall health.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="safety-visual">
+          <div class="safety-card"><div class="safety-card-icon">🧹</div><div class="safety-card-label">Clean Daily</div></div>
+          <div class="safety-card"><div class="safety-card-icon">👁️</div><div class="safety-card-label">Always Supervised</div></div>
+          <div class="safety-card"><div class="safety-card-icon">🍽️</div><div class="safety-card-label">Wholesome Meals</div></div>
+          <div class="safety-card"><div class="safety-card-icon">💤</div><div class="safety-card-label">Rest & Nap Time</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-inner">
+      <div class="section-header centered">
+        <div class="section-label">What parents say</div>
+        <h2 class="section-h2">Families Trust Rashidi Family Daycare</h2>
+        <p class="section-lead">Hear from the Bowie, MD families whose children are part of our daycare family.</p>
+      </div>
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"They truly care about each child's well-being and development. My child loves coming here every morning — it really feels like a second home."</p>
+          <div class="review-author">
+            <div class="review-avatar">FM</div>
+            <div>
+              <div class="review-name">Fazal Mahmood Salimee</div>
+              <div class="review-date">9 months ago · Google Review</div>
+            </div>
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"My child gets the attention she needs — unlike at a big daycare center. The caregivers here are genuinely warm and attentive."</p>
+          <div class="review-author">
+            <div class="review-avatar">MR</div>
+            <div>
+              <div class="review-name">Mustafa Rashidi</div>
+              <div class="review-date">10 months ago · Google Review</div>
+            </div>
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"The meals are wonderful, the play environment is safe, and the caregivers treat our children with real kindness. We couldn't be happier with our choice."</p>
+          <div class="review-author">
+            <div class="review-avatar">BP</div>
+            <div>
+              <div class="review-name">Bowie, MD Parent</div>
+              <div class="review-date">Recent · Google Review</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="review-disclaimer">Reviews shown are from public sources and may not be independently verified.</p>
+      <div style="text-align:center; margin-top:32px;">
+        <a href="#" class="btn-secondary" style="display:inline-flex" onclick="showPage('reviews')">Read All Reviews →</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="location-strip">
+    <div class="location-inner">
+      <div class="location-item">
+        <h4>📍 Our Location</h4>
+        <p>14606 Arabian Ln<br>Bowie, MD 20715</p>
+        <a href="https://maps.google.com/?q=14606+Arabian+Ln,+Bowie,+MD+20715" target="_blank">Get Directions →</a>
+      </div>
+      <div class="location-item">
+        <h4>🕕 Hours</h4>
+        <p>Open Daily<br>Closes at 6:00 PM</p>
+      </div>
+      <div class="location-item">
+        <h4>📞 Contact Us</h4>
+        <p><a href="tel:+13015260841">(301) 526-0841</a></p>
+        <p style="margin-top:8px; font-size:14px; opacity:.7;">Call to ask questions or schedule your tour</p>
+      </div>
+    </div>
+  </div>
+
+  <section class="final-cta">
+    <h2>Ready to Give Your Child the Best Start?</h2>
+    <p>Schedule a tour of our Bowie, MD family daycare today. Come see the warm, safe space your child will love.</p>
+    <div class="btn-group">
+      <a href="#" class="btn-white" onclick="showPage('contact')">📅 Schedule a Tour</a>
+      <a href="tel:+13015260841" class="btn-outline-white">📞 Call (301) 526-0841</a>
+    </div>
+  </section>
+
+</div><!-- end home -->
+
+<!-- ===== ABOUT PAGE ===== -->
+<div class="page" id="page-about">
+  <section class="about-hero">
+    <div class="section-inner">
+      <div style="max-width:720px;">
+        <div class="section-label">About us</div>
+        <h1 class="hero-h1" style="font-size: clamp(1.8rem,3.5vw,2.8rem);">A Family Daycare Built on Love, Safety & Respect</h1>
+        <p style="font-size:17px; color:var(--text-mid); margin-top:20px; line-height:1.8;">Rashidi Family Daycare offers a warm, safe, and culturally respectful environment where children are nurtured, educated, and cared for like family. Located in the heart of Bowie, MD, we are proud to serve families in the 20715 community and surrounding areas.</p>
+        <p style="font-size:16px; color:var(--text-mid); margin-top:16px; line-height:1.8;">Our approach to childcare is deeply personal. We believe that the early years of a child's life are the most formative — and that the environment they grow in matters enormously. That's why we've created a home-based daycare that feels exactly like that: home.</p>
+        <div class="btn-group" style="margin-top:28px;">
+          <a href="#" class="btn-primary" onclick="showPage('contact')">Schedule a Tour</a>
+          <a href="tel:+13015260841" class="btn-secondary">Call Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-inner">
+      <div class="section-header">
+        <div class="section-label">Our philosophy</div>
+        <h2 class="section-h2">What We Believe</h2>
+      </div>
+      <div class="values-grid">
+        <div class="value-card">
+          <h4>🌍 Cultural Respect</h4>
+          <p>Every family brings a unique background, and we honor that. We create an inclusive environment where all children and families feel welcomed and respected.</p>
+        </div>
+        <div class="value-card">
+          <h4>❤️ Genuine Care</h4>
+          <p>We don't just look after children — we genuinely care about their happiness, well-being, and growth. Every child here is treated like part of our own family.</p>
+        </div>
+        <div class="value-card">
+          <h4>📚 Learning Through Play</h4>
+          <p>Children learn best when they're engaged and having fun. Our daily activities are designed to spark curiosity, creativity, and a lifelong love of learning.</p>
+        </div>
+        <div class="value-card">
+          <h4>🤝 Partnership With Parents</h4>
+          <p>We see ourselves as an extension of your family. Open communication, trust, and collaboration with parents are at the heart of everything we do.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="background:var(--cream);">
+    <div class="section-inner">
+      <div class="section-header centered">
+        <div class="section-label">Serving Bowie, MD</div>
+        <h2 class="section-h2">Proudly Serving Our Local Community</h2>
+        <p class="section-lead">As a family daycare in Bowie, MD, we are deeply rooted in the local community. Families from throughout the 20715 area trust us with what matters most — their children.</p>
+      </div>
+      <div style="text-align:center; margin-top:32px;">
+        <a href="#" class="btn-primary" onclick="showPage('contact')">Schedule a Tour Today</a>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ===== PROGRAMS PAGE ===== -->
+<div class="page" id="page-programs">
+  <section>
+    <div class="section-inner">
+      <div class="section-header">
+        <div class="section-label">Programs & services</div>
+        <h1 class="hero-h1" style="font-size:clamp(1.8rem,3.5vw,2.8rem);">Age-Appropriate Programs for Every Stage</h1>
+        <p class="section-lead" style="margin-top:16px;">We provide age-appropriate programs designed to support each child's unique developmental needs — blending nurturing care with meaningful learning experiences and joyful play.</p>
+      </div>
+      <div class="programs-grid">
+        <div class="program-card" data-age="Infants" style="padding:32px;">
+          <h3 style="font-size:1.25rem; margin-bottom:12px;">🍼 Infant Care</h3>
+          <p>Our infant program centers on forming secure attachments, responding to individual cues, and creating a calm, nurturing space for our youngest children. We work closely with parents to honor each baby's home routines and support healthy developmental milestones.</p>
+        </div>
+        <div class="program-card" data-age="Toddlers" style="padding:32px;">
+          <h3 style="font-size:1.25rem; margin-bottom:12px;">🧩 Toddler Program</h3>
+          <p>Toddlers are natural explorers, and our program gives them the safe, stimulating environment they need to thrive. Through hands-on play, music, storytelling, and guided activities, children build language, motor skills, and early social awareness.</p>
+        </div>
+        <div class="program-card" data-age="Preschool" style="padding:32px;">
+          <h3 style="font-size:1.25rem; margin-bottom:12px;">🎨 Preschool Readiness</h3>
+          <p>We prepare children for kindergarten and beyond through early literacy activities, number recognition, creative arts, and structured group time. Our goal is to build confidence, independence, and a genuine enthusiasm for learning.</p>
+        </div>
+        <div class="program-card" data-age="School-Age" style="padding:32px;">
+          <h3 style="font-size:1.25rem; margin-bottom:12px;">📖 School-Age Care</h3>
+          <p>For school-age children, we offer a calm, consistent before- and after-school environment. Children have time to decompress, complete homework, enjoy enriching activities, and build friendships in a welcoming space.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="background:var(--cream);">
+    <div class="section-inner">
+      <div class="section-header centered">
+        <div class="section-label">Our daily approach</div>
+        <h2 class="section-h2">A Day at Rashidi Family Daycare</h2>
+        <p class="section-lead">Each day is thoughtfully structured to give children the right balance of learning, play, nutrition, rest, and connection.</p>
+      </div>
+      <div class="why-grid" style="margin-top:40px;">
+        <div class="why-card"><div class="why-icon">☀️</div><h3>Morning Welcome</h3><p>A warm, consistent arrival routine helps children transition comfortably and feel secure from the moment they walk in.</p></div>
+        <div class="why-card"><div class="why-icon">🎨</div><h3>Learning Activities</h3><p>Age-appropriate, hands-on activities support cognitive, language, social, and emotional development throughout the morning.</p></div>
+        <div class="why-card"><div class="why-icon">🍽️</div><h3>Nutritious Meals & Snacks</h3><p>We provide balanced, wholesome meals and snacks to keep children nourished and energized throughout the day.</p></div>
+        <div class="why-card"><div class="why-icon">🏃</div><h3>Active Play</h3><p>Physical activity and creative play are essential. Children enjoy both indoor and outdoor play in a safe, supervised environment.</p></div>
+        <div class="why-card"><div class="why-icon">💤</div><h3>Rest & Quiet Time</h3><p>Consistent rest periods support healthy development and give children the downtime they need to recharge.</p></div>
+        <div class="why-card"><div class="why-icon">📞</div><h3>Parent Communication</h3><p>We maintain open, ongoing communication with families so parents always know how their child is doing.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="final-cta">
+    <h2>Want to Learn More About Our Programs?</h2>
+    <p>Contact us or come in for a tour — we'd love to walk you through what a typical day looks like for your child.</p>
+    <div class="btn-group">
+      <a href="#" class="btn-white" onclick="showPage('contact')">Schedule a Tour</a>
+      <a href="tel:+13015260841" class="btn-outline-white">📞 (301) 526-0841</a>
+    </div>
+  </section>
+</div>
+
+<!-- ===== REVIEWS PAGE ===== -->
+<div class="page" id="page-reviews">
+  <section>
+    <div class="section-inner">
+      <div class="section-header centered">
+        <div class="section-label">Parent reviews</div>
+        <h1 class="hero-h1" style="font-size:clamp(1.8rem,3.5vw,2.8rem);">What Bowie Families Are Saying</h1>
+        <div style="display:flex; align-items:center; justify-content:center; gap:12px; margin-top:20px; flex-wrap:wrap;">
+          <span style="font-size:2rem; color:var(--gold);">★★★★★</span>
+          <span style="font-size:1.5rem; font-family:var(--font-display); color:var(--navy); font-weight:700;">5.0</span>
+          <span style="color:var(--text-light); font-size:15px;">Based on 11 Google Reviews</span>
+        </div>
+      </div>
+
+      <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(300px,1fr)); gap:24px; margin-top:48px;">
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"They truly care about each child's well-being and development. My child loves coming every morning — it really feels like a second home. The attention and warmth here is unlike anything I've seen at a larger center."</p>
+          <div class="review-author">
+            <div class="review-avatar">FM</div>
+            <div>
+              <div class="review-name">Fazal Mahmood Salimee</div>
+              <div class="review-date">9 months ago · Google Review</div>
+            </div>
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"My child gets the personal attention she needs — something you simply don't get at a big daycare center. The caregivers are warm, attentive, and genuinely invested in her growth and happiness."</p>
+          <div class="review-author">
+            <div class="review-avatar">MR</div>
+            <div>
+              <div class="review-name">Mustafa Rashidi</div>
+              <div class="review-date">10 months ago · Google Review</div>
+            </div>
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"The meals are wholesome, the play areas are engaging, and the caregivers treat our children with such genuine kindness. I can go to work knowing my child is safe and well cared for. Highly recommend."</p>
+          <div class="review-author">
+            <div class="review-avatar">BP</div>
+            <div>
+              <div class="review-name">Bowie Parent</div>
+              <div class="review-date">Recent · Google Review</div>
+            </div>
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"A home-like environment where children are truly seen and cared for. The structure, the play, the meals — everything is thoughtfully done. We're so grateful to have found Rashidi Family Daycare."</p>
+          <div class="review-author">
+            <div class="review-avatar">LP</div>
+            <div>
+              <div class="review-name">Local Parent</div>
+              <div class="review-date">Recent · Google Review</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p class="review-disclaimer" style="margin-top:40px;">Reviews shown are from public sources and may not be independently verified.</p>
+
+      <div style="text-align:center; margin-top:40px;">
+        <a href="#" class="btn-primary" onclick="showPage('contact')">Schedule a Tour</a>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ===== GALLERY PAGE ===== -->
+<div class="page" id="page-gallery">
+  <section>
+    <div class="section-inner">
+      <div class="section-header centered">
+        <div class="section-label">Photo gallery</div>
+        <h1 class="hero-h1" style="font-size:clamp(1.8rem,3.5vw,2.8rem);">A Look Inside Rashidi Family Daycare</h1>
+        <p class="section-lead" style="margin-top:16px;">Take a peek at the warm, welcoming spaces where children learn, play, eat, and grow every day. Photos coming soon — or contact us to schedule an in-person tour.</p>
+      </div>
+      <div class="gallery-photo-grid">
+
+        <div class="gallery-photo-item" onclick="openLightbox('images/img1.jpg')"
+          <img src="images/img1.jpg" alt="Indoor Play Room" loading="lazy">
+          <div class="gallery-caption">
+            <h4>Indoor Play Room</h4>
+            <p>Spacious play area with toys, activities & space to explore</p>
+          </div>
+        </div>
+        <div class="gallery-photo-item" onclick="openLightbox('images/img2.jpg')"
+          <img src="images/img2.jpg" alt="Outdoor Play Area" loading="lazy">
+          <div class="gallery-caption">
+            <h4>Outdoor Play Area</h4>
+            <p>Safe backyard with bikes, slides & room to run</p>
+          </div>
+        </div>
+        <div class="gallery-photo-item" onclick="openLightbox('images/img3.jpg')"
+          <img src="images/img3.jpg" alt="Outdoor Play Equipment" loading="lazy">
+          <div class="gallery-caption">
+            <h4>Outdoor Play Equipment</h4>
+            <p>Slide, basketball hoop & sports area for active play</p>
+          </div>
+        </div>
+        <div class="gallery-photo-item" onclick="openLightbox('images/img4.jpg')"
+          <img src="images/img4.jpg" alt="Learning Corner" loading="lazy">
+          <div class="gallery-caption">
+            <h4>Learning Corner</h4>
+            <p>Reading area, alphabet mat, books & educational toys</p>
+          </div>
+        </div>
+        <div class="gallery-photo-item" onclick="openLightbox('images/img5.jpg')"
+          <img src="images/img5.jpg" alt="Ball Pit Fun" loading="lazy">
+          <div class="gallery-caption">
+            <h4>Ball Pit Fun</h4>
+            <p>Colourful ball pit for sensory play and fun</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-note" style="margin-top:32px;">
+        📅 <strong>Want to see it in person?</strong> <a href="#" onclick="showPage('contact')" style="color:var(--teal); font-weight:600;">Schedule a free tour</a> and see our home firsthand.
+      </div>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+    <span class="lightbox-close" onclick="closeLightbox()">×</span>
+    <img id="lightbox-img" src="" alt="Gallery photo">
+  </div>
+    </div>
+  </section>
+</div>
+
+<!-- ===== CONTACT PAGE ===== -->
+<div class="page" id="page-contact">
+  <section>
+    <div class="section-inner">
+      <div class="section-header">
+        <div class="section-label">Contact & schedule a tour</div>
+        <h1 class="hero-h1" style="font-size:clamp(1.8rem,3.5vw,2.8rem);">We'd Love to Meet Your Family</h1>
+        <p class="section-lead" style="margin-top:16px;">Ready to take the next step? Call us, send a message, or fill out the form below to request a tour of Rashidi Family Daycare in Bowie, MD.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div>
+          <div class="contact-info-item">
+            <div class="contact-info-icon">📍</div>
+            <div class="contact-info-text">
+              <h4>Our Address</h4>
+              <p>14606 Arabian Ln<br>Bowie, MD 20715, United States</p>
+              <a href="https://maps.google.com/?q=14606+Arabian+Ln,+Bowie,+MD+20715" target="_blank" style="color:var(--teal); font-weight:600; font-size:14px; display:inline-block; margin-top:4px;">Get Directions →</a>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-info-icon">📞</div>
+            <div class="contact-info-text">
+              <h4>Call Us</h4>
+              <a href="tel:+13015260841" style="font-size:18px; font-weight:700; color:var(--teal);">(301) 526-0841</a>
+              <p style="font-size:13px; margin-top:4px; color:var(--text-light);">Click to call — we're happy to answer your questions</p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-info-icon">🕕</div>
+            <div class="contact-info-text">
+              <h4>Hours</h4>
+              <p>Open Daily<br>Closes at 6:00 PM</p>
+            </div>
+          </div>
+          <div style="margin-top:32px; padding:24px; background:var(--teal-pale); border-radius:var(--radius); border:1px solid rgba(42,122,111,0.2);">
+            <p style="font-size:15px; color:var(--teal); font-weight:600; margin-bottom:8px;">⭐ 5.0 Rating on Google</p>
+            <p style="font-size:14px; color:var(--text-mid);">Trusted by families throughout Bowie, MD and the 20715 area. Come see why parents choose us.</p>
+          </div>
+        </div>
+
+        <div class="tour-form">
+          <h3>Request a Tour</h3>
+          <p class="form-sub">Fill out the form below and we'll be in touch within one business day.</p>
+          <form action="https://formspree.io/f/xzdjygoe" method="POST" onsubmit="handleSubmit(event)">
+          <input type="hidden" name="_subject" value="New Tour Request — Rashidi Family Daycare">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="parentName">Parent / Guardian Name *</label>
+              <input type="text" id="parentName" name="Parent Name" placeholder="Your full name" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number *</label>
+              <input type="tel" id="phone" name="Phone" placeholder="(301) 000-0000" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="childAge">Child's Age</label>
+              <select id="childAge" name="Child Age">
+                <option value="">Select age range</option>
+                <option>Infant (under 1)</option>
+                <option>1–2 years</option>
+                <option>2–3 years</option>
+                <option>3–5 years (Preschool)</option>
+                <option>School-age (5+)</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="startDate">Desired Start Date</label>
+              <input type="date" id="startDate" name="Desired Start Date">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="tourTime">Preferred Tour Time</label>
+            <select id="tourTime" name="Preferred Tour Time">
+              <option value="">Select preference</option>
+              <option>Morning (before 12 PM)</option>
+              <option>Afternoon (12–3 PM)</option>
+              <option>Late afternoon (3–6 PM)</option>
+              <option>Flexible / No preference</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Any Questions or Notes</label>
+            <textarea id="message" name="Message" placeholder="Tell us a little about your child or any questions you have..."></textarea>
+          </div>
+          <button type="submit" class="btn-primary" style="width:100%; justify-content:center; font-size:16px; padding:16px;">📅 Request My Tour</button>
+          <p class="privacy-note">We only use your information to respond to your request. Your data will never be shared or sold.</p>
+          <div id="formSuccess" style="display:none; margin-top:16px; padding:16px; background:var(--teal-pale); border-radius:var(--radius-sm); color:var(--teal); font-weight:600; text-align:center;">
+            ✅ Thank you! We'll be in touch shortly to confirm your tour.
+          </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section on Contact Page -->
+  <section style="background:var(--cream);">
+    <div class="section-inner">
+      <div class="section-header centered">
+        <div class="section-label">Common questions</div>
+        <h2 class="section-h2">Frequently Asked Questions</h2>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">What age groups do you serve?</button>
+          <div class="faq-a"><div class="faq-a-inner">We provide care for children from infancy through school age. Please contact us to confirm current availability for your child's specific age group.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">What are your hours?</button>
+          <div class="faq-a"><div class="faq-a-inner">We are open daily and close at 6:00 PM. Please call us at (301) 526-0841 for specific opening times and to discuss your schedule needs.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">Do you provide meals?</button>
+          <div class="faq-a"><div class="faq-a-inner">Yes. We provide nutritious meals and snacks throughout the day. Our goal is to keep children well-nourished and energized for learning and play.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">How do I schedule a tour?</button>
+          <div class="faq-a"><div class="faq-a-inner">You can schedule a tour by calling us at (301) 526-0841 or by filling out the Request a Tour form above. We'll get back to you quickly to confirm a time that works for your family.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">Where are you located?</button>
+          <div class="faq-a"><div class="faq-a-inner">We are located at 14606 Arabian Ln, Bowie, MD 20715. We serve families throughout the Bowie area, including those near the 20715 zip code.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">Is your daycare home-based?</button>
+          <div class="faq-a"><div class="faq-a-inner">Yes. Rashidi Family Daycare is a home-based daycare, which means children benefit from a warm, intimate, family-like environment with more personal attention than larger centers can provide.</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">Rashidi Family Daycare</div>
+        <p class="footer-desc">A warm, safe, and culturally respectful family daycare in Bowie, MD. Caring for children like family since day one.</p>
+      </div>
+      <div>
+        <h5>Quick Links</h5>
+        <ul>
+          <li><a href="#" onclick="showPage('home')">Home</a></li>
+          <li><a href="#" onclick="showPage('about')">About Us</a></li>
+          <li><a href="#" onclick="showPage('programs')">Programs</a></li>
+          <li><a href="#" onclick="showPage('reviews')">Reviews</a></li>
+          <li><a href="#" onclick="showPage('gallery')">Gallery</a></li>
+          <li><a href="#" onclick="showPage('contact')">Schedule a Tour</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Contact & Hours</h5>
+        <div class="footer-nap">
+          <strong>Rashidi Family Daycare</strong>
+          14606 Arabian Ln<br>
+          Bowie, MD 20715<br>
+          United States<br><br>
+          <a href="tel:+13015260841" style="color:var(--teal-light);">+1 (301) 526-0841</a><br><br>
+          Open Daily · Closes at 6:00 PM
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Rashidi Family Daycare · Family Daycare in Bowie, MD · Childcare near 20715</span>
+      <span><a href="https://maps.google.com/?q=14606+Arabian+Ln,+Bowie,+MD+20715" target="_blank" style="color:var(--teal-light);">Get Directions</a></span>
+    </div>
+  </div>
+</footer>
+
+<script>
+
+function openLightbox(src) {
+  document.getElementById('lightbox-img').src = src;
+  document.getElementById('lightbox').classList.add('open');
+}
+function closeLightbox() {
+  document.getElementById('lightbox').classList.remove('open');
+}
+
+function showPage(name) {
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+  document.getElementById('page-' + name).classList.add('active');
+  document.querySelectorAll('.nav-links a').forEach(a => a.classList.remove('active'));
+  const navEl = document.getElementById('nav-' + name);
+  if (navEl) navEl.classList.add('active');
+  window.scrollTo({top: 0, behavior: 'smooth'});
+}
+
+function toggleMenu() {
+  document.getElementById('mobileMenu').classList.toggle('open');
+}
+function closeMenu() {
+  document.getElementById('mobileMenu').classList.remove('open');
+}
+
+function toggleFaq(btn) {
+  const answer = btn.nextElementSibling;
+  const isOpen = btn.classList.contains('open');
+  document.querySelectorAll('.faq-q').forEach(q => {
+    q.classList.remove('open');
+    q.nextElementSibling.style.maxHeight = '0';
+  });
+  if (!isOpen) {
+    btn.classList.add('open');
+    answer.style.maxHeight = answer.scrollHeight + 'px';
+  }
+}
+
+function handleSubmit(e) {
+  e.preventDefault();
+  const form = e.target;
+  const data = new FormData(form);
+  fetch('https://formspree.io/f/xzdjygoe', {
+    method: 'POST', body: data, headers: { 'Accept': 'application/json' }
+  }).then(r => {
+    if (r.ok) {
+      document.getElementById('formSuccess').style.display = 'block';
+      form.reset();
+      form.querySelector('button[type=submit]').textContent = '✅ Request Submitted';
+    } else { alert('Something went wrong. Please call us at (301) 526-0841.'); }
+  }).catch(() => alert('Network error. Please call us at (301) 526-0841.'));
+}
+</script>
+</body>
+</html>
